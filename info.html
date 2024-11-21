@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основная информация</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+
+    <div class="content-spy">
+        <nav class="navbar navbar-expand-lg navbar">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="info.html">Информация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="films.html">Фильмы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+<div id="navbar" class="side-nav">
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link" href="#Carousel">Карусель</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#films">Карочки с<br> фильмами</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#infoButton">Об актёре</a>
+        </li>
+    </ul>
+</div>
+
+<button id="infoButton" class="btn btn-primary mb-3 infobtn" type="button" data-toggle="collapse"
+            data-target="#collapseInfo" aria-expanded="false" aria-controls="collapseInfo">
+            Краткая информация об актёре
+</button>
+<div class="collapse" id="collapseInfo">
+    <div class="card card-body">
+            <p class = "dark-p">Полное имя: Александр Сергеевич Устюгов</p>
+            <p class = "dark-p">Место рождения: 17 октября 1976 года в Экибастузе Павлодарской области Казахской ССР</p>
+            <p class = "dark-p">Образование: В 2003 году окончил Театральное училище им. Щукина.</p>
+            <p class = "dark-p">Личная жизнь: Янина Соколовская (развод)один ребенок, Анна Озар (развод)</p>
+        </div>
+</div>
+
+<div id="Carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#Carousel" data-slide-to="1"></li>
+        <li data-target="#Carousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="ustigov.jpg" class="d-block w-100" alt="Фото актёра 1">
+        </div>
+        <div class="carousel-item">
+            <img src="ustigov2.jpg" class="d-block w-100" alt="Фото актёра 2">
+        </div>
+        <div class="carousel-item">
+            <img src="ustigov3.jpg" class="d-block w-100" alt="Фото актёра 3">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#Carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Назад</span>
+    </a>
+    <a class="carousel-control-next" href="#Carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Вперёд</span>
+    </a>
+</div>
+<div id="films" class="container mt-4">
+    <h1>Фильмы с участием актёра</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="ментовские_войны.jpg" class="card-img-top" alt="Постер фильма 1">
+                <div class="card-body">
+                    <h5 class="card-title">Ментовские войны</h5>
+                    <p class="dark-p">Криминальный авторитет Герман Дробышев, по кличке «Моцарт», решил передать в руки закона двух разоблаченных киллеров. После этого жизнь начальника «убойного» отдела Романа Шилова, ведущего это дело, круто перевернулась. Роман и представить себе не мог, что тот клубок, который он стал распутывать, окажется таким огромным.
+                        На Шилова объявили охоту. Самые мощные преступные группировки города жаждут его крови. Ужаснее всего то, что бандитам покровительствует кто-то из коллег Романа.
+                        Чтобы узнать, кто эти «оборотни в погонах», Роман должен идти до конца, но, чем дальше он углубляется в это расследование, тем яснее понимает, что следы коррупции ведут на самый высокий уровень руководства ГУВД.</p>
+                    <a href="https://www.kinopoisk.ru/series/231141/" class="btn btn-primary">Посмотреть на Кинопоиске</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="союз_спасения.jpg" class="card-img-top" alt="Постер фильма 2">
+                <div class="card-body">
+                    <h5 class="card-title">Союз спасения</h5>
+                    <p class="dark-p">Императорские войска России заняли Париж. Россия стала первой державой мира. Теперь всё кажется возможным. Молодые победители, гвардейские офицеры, уверены, что равенство и свобода наступят - здесь и сейчас. Ради этого они готовы принести в жертву всё — положение, богатство, любовь, жизнь… и саму страну.</p>
+                    <a href="https://www.kinopoisk.ru/film/972740/" class="btn btn-primary">Посмотреть на Кинопоиске</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="адъютанты_любви.jpg" class="card-img-top" alt="Постер фильма 3">
+                <div class="card-body">
+                    <h5 class="card-title">Адъютанты любви</h5>
+                    <p class="dark-p">1800 год. Европа накануне больших перемен. Наполеон Бонапарт готовится к великим свершениям, но семейные «баталии» мешают этому.
+                        Российский престол и император Павел как никогда нуждается в преданных Отечеству людях. Император вызывает Суворова для примирения. И, несмотря на то, что примирения не происходит, Суворов решает служить Отечеству.
+                        В небольшое поместье Черкасово прибывает князь Курагин – навестить Евдокию Дмитриевну и Петра Черкасовых, вдову и сына боевого товарища. Курагин предлагает поехать юноше в Петербург и поступить на военную службу. Но Петр счастлив в деревне и страстно влюблен в соседку по усадьбе Ольгу Лопухину. Да и Евдокия Дмитриевна против того, чтобы сын уезжал от нее. Но вскоре ее планы меняются…</p>
+                    <a href="https://www.kinopoisk.ru/series/418345/" class="btn btn-primary">Посмотреть на Кинопоиске</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
